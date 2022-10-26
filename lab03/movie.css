@@ -1,0 +1,138 @@
+/*Pietro Mondino file di stile per il film TMNT*/
+
+
+#poster{
+  float: right;
+}
+
+body{
+  background-image: url("http://courses.cs.washington.edu/courses/cse190m/11sp/homework/2/background.png");
+  background-repeat: repeat;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 8pt;
+  padding: 0;
+  margin: 0;
+}
+
+#content {
+  width: 800px;
+  margin: auto;
+  border: solid 4px gray;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#bottom{
+  text-align: center;
+  background-color: #A2B964;
+  clear: both;
+  margin-bottom: 0px;
+}
+
+#heading{
+  background-image: url("https://courses.cs.washington.edu/courses/cse190m/11sp/homework/2/bannerbg.png");
+  background-repeat: repeat-x;
+  text-align: center;
+}
+
+.review{
+  font-weight: bold;
+  font-size: 8pt;
+  background-color: #E8DC9B;
+  border: solid 2px grey;
+  border-radius: 10px;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.review > img{
+  vertical-align: text-top;
+  margin-right: 5px;
+  float: left;
+}
+
+.reviewer{
+  overflow: hidden;
+  margin-bottom: 20pt;
+}
+
+.reviewer > img {
+  vertical-align: top;
+  margin-right: 5px;
+  float: left;
+}
+
+#reviews{
+  width: 550px;
+  overflow: hidden;
+}
+
+
+#left{
+  width: 47%;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#right{
+  float: right;
+  width: 47%;
+  margin-right: 2%;
+}
+
+#valid{
+  float:right;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0.5;
+}
+
+#info{
+  float: right;
+  clear: right;
+  max-width: 250px;
+  margin-top: -10px;
+  background-color: #A2B964;
+}
+
+#info ul{
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+#info  dl{
+  padding: 10pt;
+  padding-bottom:0px;
+  font-style: Arial, sans-serif;
+}
+
+#info  dl dt{
+  font-weight: bold;
+}
+#info  dl dd{
+  padding-bottom: 10pt;
+}
+
+#banner{
+  width: 550px;
+  background-image: url("https://courses.cs.washington.edu/courses/cse190m/11sp/homework/2/rbg.png");
+  background-repeat: repeat-x;
+  font-size: 48pt;
+  color: red;
+  font-weight: bold;
+}
+
+#banner span{
+  vertical-align: top;
+}
+
+h1{
+  text-align: center;
+  font-size: 24pt;
+  font-weight:bold;
+  font-style: Tahoma, Verdana, sans-serif;
+  text-shadow: 3px 3px #999999;
+}
+
