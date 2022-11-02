@@ -8,7 +8,7 @@
 
 	<ul>
 		<li>
-			<a href="lab04/signup.php">
+			<a href="signup.php">
 				<img src="http://www.cs.washington.edu/education/courses/cse190m/12sp/homework/4/signup.gif" alt="icon" >
 				Sign up for a new account
 			</a>

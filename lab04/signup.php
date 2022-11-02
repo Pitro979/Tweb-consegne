@@ -26,6 +26,13 @@
             <input name="max_age" size="4" maxlength="2" placeholder="max">
         </label>
         <br>
+        <label><strong> Prefered gender:</strong>
+        <select name="wanted">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="ANY">Both</option>
+        </select>
+        </label><br>
         <input type="submit" value="Sign Up">
     </fieldset>
 </form>

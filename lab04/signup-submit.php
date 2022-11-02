@@ -1,11 +1,12 @@
 <?php 
     include "top.html";
-
+    //update file
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $data= implode(',',$_POST);
         $data=$data."\n";
         file_put_contents("singles.txt",$data,FILE_APPEND);
     }
+    //Draw screen with user name
 ?>
 
 <div>
