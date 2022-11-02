@@ -15,7 +15,7 @@
 		</li>
 		
 		<li>
-			<a href="lab04/matches.php">
+			<a href="matches.php">
 				<img src="http://www.cs.washington.edu/education/courses/cse190m/12sp/homework/4/heartbig.gif" alt="icon" >
 				Check your matches
 			</a>

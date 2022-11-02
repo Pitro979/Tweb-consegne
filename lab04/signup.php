@@ -15,9 +15,9 @@
         (<a href="bohh????">Don't know your type?</a>)<br>
         <label><strong> Favorite OS:</strong>
         <select name="os">
-            <option value="linux">Linux</option>
-            <option value="mac">Mac OS X</option>
-            <option value="windows">Windows</option>
+            <option value="Linux">Linux</option>
+            <option value="Mac OS X">Mac OS X</option>
+            <option value="Windows">Windows</option>
         </select>
         </label><br>
         <label>
@@ -30,7 +30,7 @@
         <select name="wanted">
             <option value="M">Male</option>
             <option value="F">Female</option>
-            <option value="ANY">Both</option>
+            <option value="A">Both</option>
         </select>
         </label><br>
         <input type="submit" value="Sign Up">
