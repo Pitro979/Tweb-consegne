@@ -25,17 +25,8 @@ function map($usr_data){
     return $ret;
 }
 //Check compatibility
-function is_compatible($user_data,$single_data){
-    if(array_key_exists("wants",$user_data)){
-        $desired=$user_data["wants"];
-    }
-    else if($user_data["gender"] == "M"){
-        $desired="F";
-    }
-    else{
-        $desired="M";
-    }
-    return ($desired=="A" || $single_data["gender"]==$desired)
+function is_compatible($user_data,$single_data,$desired){
+    return (strcmp($desired,'A') or $single_data["gender"]==$desired)
     && $single_data["age"]<=$user_data["max_age"]
     && $single_data["age"]>=$user_data["min_age"]
     && check_pers($user_data["personality"],$single_data["personality"])
@@ -50,7 +41,6 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
         $comp_arr=explode(',',$comp);
         if($comp_arr[0]==$usr){
             $usr_data=map($comp_arr);
-            print($usr_data["name"]);
         }
         else{
             $singles[]=map($comp_arr);
@@ -62,8 +52,17 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
 <p><strong>Matches for <?= $usr_data['name'] ?></strong></p><br>
 
 <?php 
+    if(array_key_exists("wants",$usr_data)){
+        $desired=$usr_data["wants"];
+    }
+    else if($usr_data["gender"] == "M"){
+        $desired="F";
+    }
+    else{
+        $desired="M";
+    }
     foreach($singles as $single){
-        if(is_compatible($usr_data,$single)){
+        if(is_compatible($usr_data,$single,$desired)){
 ?>
                 <div class="match">
                     <p><?=$single["name"] ?></p>
